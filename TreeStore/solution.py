@@ -4,24 +4,16 @@ import pprint
 class TreeStore:
     
     def __init__ ( self, items ):
-        
         self.__items = { item [ 'id' ]: item for item in items }
     
-    
     def getAll ( self ):
-        
         return list ( self.__items. values () )
         
-    
     def getItem ( self, item_id, default=None ):
-        
         return self.__items.get ( item_id, default )
         
-    
     def getChildren ( self, item_id ):
-        
         return [ self.getItem ( item ) for item in self.__items if self.getItem ( item ) [ 'parent' ] == item_id ]
-        
         
     def getAllParents ( self, item_id ):
         
