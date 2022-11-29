@@ -20,3 +20,8 @@ def __main() -> None:
 
 if __name__ == '__main__':
         __main()
+
+
+#Complexity Analysis
+#Time Complexity: O(n)
+#Space Complexity: O(1)
