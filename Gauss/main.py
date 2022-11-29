@@ -10,7 +10,7 @@ def __find_missing ( mas: list ) -> int:
         return int ( total_sum - sum ( mas ) )          #this difference will be equal to the lost number       #O(n)
 
 
-def __main():
+def __main() -> None:
 
         assert __find_missing ( [ 1, 3 ] ) == 2
         assert __find_missing ( [ 1, 2, 4, 5 ] ) == 3
